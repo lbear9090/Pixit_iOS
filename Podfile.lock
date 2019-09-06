@@ -1,0 +1,38 @@
+PODS:
+  - AORangeSlider (1.0.1)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - CropViewController (2.3.6)
+  - OpenCV2-contrib (3.2.0.1)
+
+DEPENDENCIES:
+  - AORangeSlider
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - CropViewController
+  - OpenCV2-contrib
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AORangeSlider
+    - CropViewController
+    - OpenCV2-contrib
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+SPEC CHECKSUMS:
+  AORangeSlider: a5ec9ce6815cee8ae9fc6c6286f910ea12cd822a
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CropViewController: e6d4bd512d15a1709e9ddf71fe7d98ffd05dda0f
+  OpenCV2-contrib: 314f0aa0159767a4b2e4208a35d646542bc15da6
+
+PODFILE CHECKSUM: 1591daf8321cafcc41aa7fb6946c05ed2b58abc8
+
+COCOAPODS: 1.6.1

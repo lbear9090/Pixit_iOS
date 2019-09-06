@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050F6ABD2257725A00C0A144 /* CVFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 050F6ABC2257725A00C0A144 /* CVFilter.mm */; };
+		050F6AC02257725A00C0A144 /* CVImgFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 050F6ABF2257725A00C0A144 /* CVImgFilter.mm */; };
+		050F6AC32257725A00C0A144 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 050F6AC22257725A00C0A144 /* UIImageCVMatConverter.mm */; };
+		05E02D71224B7D750030DEEC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E02D69224B7D240030DEEC /* GPUImage.framework */; };
+		05E02D72224B7D750030DEEC /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E02D69224B7D240030DEEC /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		512EE1A364CE60A0DB4D652D /* Pods_Pixit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76CBF6C6BCE2C0DF2FF8F6 /* Pods_Pixit.framework */; };
+		846F06A42229078D009D28F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F069E2229078D009D28F6 /* AppDelegate.swift */; };
+		846F06A52229078D009D28F6 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F069F2229078D009D28F6 /* SketchViewController.swift */; };
+		846F06A62229078D009D28F6 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F06A02229078D009D28F6 /* TestingViewController.swift */; };
+		846F06A72229078D009D28F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F06A12229078D009D28F6 /* ViewController.swift */; };
+		846F06A82229078D009D28F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846F06A22229078D009D28F6 /* Main.storyboard */; };
+		846F06A92229078D009D28F6 /* DrawAdjustedImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F06A32229078D009D28F6 /* DrawAdjustedImgView.swift */; };
+		B50BB05320A42B8F007D13E2 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B50BB05220A42B8F007D13E2 /* aaa.jpg */; };
+		B59904662087123900A5265F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59904652087123900A5265F /* Assets.xcassets */; };
+		B59904692087123900A5265F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59904672087123900A5265F /* LaunchScreen.storyboard */; };
+		B59904792087166D00A5265F /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B59904782087166D00A5265F /* OpenCVWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05E02D68224B7D240030DEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+		05E02D6A224B7D240030DEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
+			remoteInfo = GPUImageTests_iOS;
+		};
+		05E02D73224B7D750030DEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05E02D75224B7D760030DEEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05E02D72224B7D750030DEEC /* GPUImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050F6ABB2257725A00C0A144 /* CVFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVFilter.h; sourceTree = "<group>"; };
+		050F6ABC2257725A00C0A144 /* CVFilter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVFilter.mm; sourceTree = "<group>"; };
+		050F6ABE2257725A00C0A144 /* CVImgFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVImgFilter.h; sourceTree = "<group>"; };
+		050F6ABF2257725A00C0A144 /* CVImgFilter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVImgFilter.mm; sourceTree = "<group>"; };
+		050F6AC12257725A00C0A144 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
+		050F6AC22257725A00C0A144 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
+		05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage2/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		0C336731252B4F268962D3BD /* Pods-Pixit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pixit/Pods-Pixit.release.xcconfig"; sourceTree = "<group>"; };
+		2343A2DCB3EEEDCF4FA20422 /* Pods-Pixit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pixit/Pods-Pixit.debug.xcconfig"; sourceTree = "<group>"; };
+		2B76CBF6C6BCE2C0DF2FF8F6 /* Pods_Pixit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		846F069E2229078D009D28F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846F069F2229078D009D28F6 /* SketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		846F06A02229078D009D28F6 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		846F06A12229078D009D28F6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		846F06A22229078D009D28F6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		846F06A32229078D009D28F6 /* DrawAdjustedImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawAdjustedImgView.swift; sourceTree = "<group>"; };
+		B50BB05220A42B8F007D13E2 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
+		B599045B2087123700A5265F /* Pixit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59904652087123900A5265F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B59904682087123900A5265F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B599046A2087123900A5265F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59904762087166D00A5265F /* Pixit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixit-Bridging-Header.h"; sourceTree = "<group>"; };
+		B59904772087166D00A5265F /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		B59904782087166D00A5265F /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B59904582087123700A5265F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512EE1A364CE60A0DB4D652D /* Pods_Pixit.framework in Frameworks */,
+				05E02D71224B7D750030DEEC /* GPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050F6AA422574C8E00C0A144 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				B59904772087166D00A5265F /* OpenCVWrapper.h */,
+				B59904782087166D00A5265F /* OpenCVWrapper.mm */,
+				050F6ABB2257725A00C0A144 /* CVFilter.h */,
+				050F6ABC2257725A00C0A144 /* CVFilter.mm */,
+				050F6ABE2257725A00C0A144 /* CVImgFilter.h */,
+				050F6ABF2257725A00C0A144 /* CVImgFilter.mm */,
+				050F6AC12257725A00C0A144 /* UIImageCVMatConverter.h */,
+				050F6AC22257725A00C0A144 /* UIImageCVMatConverter.mm */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		05E02D5E224B7D220030DEEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05E02D69224B7D240030DEEC /* GPUImage.framework */,
+				05E02D6B224B7D240030DEEC /* GPUImageTests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0859B0AE1E3B94C0238F96D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2343A2DCB3EEEDCF4FA20422 /* Pods-Pixit.debug.xcconfig */,
+				0C336731252B4F268962D3BD /* Pods-Pixit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9995C0C876BAF5FF89350738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B76CBF6C6BCE2C0DF2FF8F6 /* Pods_Pixit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B59904522087123700A5265F = {
+			isa = PBXGroup;
+			children = (
+				05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */,
+				B599045D2087123700A5265F /* Pixit */,
+				B599045C2087123700A5265F /* Products */,
+				0859B0AE1E3B94C0238F96D2 /* Pods */,
+				9995C0C876BAF5FF89350738 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B599045C2087123700A5265F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B599045B2087123700A5265F /* Pixit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B599045D2087123700A5265F /* Pixit */ = {
+			isa = PBXGroup;
+			children = (
+				050F6AA422574C8E00C0A144 /* Filters */,
+				846F069E2229078D009D28F6 /* AppDelegate.swift */,
+				846F06A32229078D009D28F6 /* DrawAdjustedImgView.swift */,
+				846F06A22229078D009D28F6 /* Main.storyboard */,
+				846F069F2229078D009D28F6 /* SketchViewController.swift */,
+				846F06A02229078D009D28F6 /* TestingViewController.swift */,
+				846F06A12229078D009D28F6 /* ViewController.swift */,
+				B59904652087123900A5265F /* Assets.xcassets */,
+				B59904672087123900A5265F /* LaunchScreen.storyboard */,
+				B50BB05220A42B8F007D13E2 /* aaa.jpg */,
+				B599046A2087123900A5265F /* Info.plist */,
+				B59904762087166D00A5265F /* Pixit-Bridging-Header.h */,
+			);
+			path = Pixit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B599045A2087123700A5265F /* Pixit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599046D2087123900A5265F /* Build configuration list for PBXNativeTarget "Pixit" */;
+			buildPhases = (
+				288A356E519C6DE23F18A972 /* [CP] Check Pods Manifest.lock */,
+				B59904572087123700A5265F /* Sources */,
+				B59904582087123700A5265F /* Frameworks */,
+				B59904592087123700A5265F /* Resources */,
+				A8EB5BA97B901DD1BEDF4C4A /* [CP] Embed Pods Frameworks */,
+				05E02D75224B7D760030DEEC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05E02D74224B7D750030DEEC /* PBXTargetDependency */,
+			);
+			name = Pixit;
+			productName = Pixit;
+			productReference = B599045B2087123700A5265F /* Pixit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B59904532087123700A5265F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = worksdelight;
+				TargetAttributes = {
+					B599045A2087123700A5265F = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = B59904562087123700A5265F /* Build configuration list for PBXProject "Pixit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B59904522087123700A5265F;
+			productRefGroup = B599045C2087123700A5265F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 05E02D5E224B7D220030DEEC /* Products */;
+					ProjectRef = 05E02D5D224B7D220030DEEC /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B599045A2087123700A5265F /* Pixit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		05E02D69224B7D240030DEEC /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 05E02D68224B7D240030DEEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05E02D6B224B7D240030DEEC /* GPUImageTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_iOS.xctest;
+			remoteRef = 05E02D6A224B7D240030DEEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B59904592087123700A5265F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59904692087123900A5265F /* LaunchScreen.storyboard in Resources */,
+				B59904662087123900A5265F /* Assets.xcassets in Resources */,
+				B50BB05320A42B8F007D13E2 /* aaa.jpg in Resources */,
+				846F06A82229078D009D28F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		288A356E519C6DE23F18A972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8EB5BA97B901DD1BEDF4C4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixit/Pods-Pixit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AORangeSlider/AORangeSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AORangeSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixit/Pods-Pixit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B59904572087123700A5265F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846F06A92229078D009D28F6 /* DrawAdjustedImgView.swift in Sources */,
+				846F06A72229078D009D28F6 /* ViewController.swift in Sources */,
+				050F6ABD2257725A00C0A144 /* CVFilter.mm in Sources */,
+				846F06A42229078D009D28F6 /* AppDelegate.swift in Sources */,
+				050F6AC02257725A00C0A144 /* CVImgFilter.mm in Sources */,
+				846F06A52229078D009D28F6 /* SketchViewController.swift in Sources */,
+				B59904792087166D00A5265F /* OpenCVWrapper.mm in Sources */,
+				846F06A62229078D009D28F6 /* TestingViewController.swift in Sources */,
+				050F6AC32257725A00C0A144 /* UIImageCVMatConverter.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05E02D74224B7D750030DEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 05E02D73224B7D750030DEEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B59904672087123900A5265F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59904682087123900A5265F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B599046B2087123900A5265F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B599046C2087123900A5265F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B599046E2087123900A5265F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2343A2DCB3EEEDCF4FA20422 /* Pods-Pixit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8JN74TLV88;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pixit",
+					"$(PROJECT_DIR)/opencv",
+				);
+				INFOPLIST_FILE = Pixit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pixit.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sabine Wildecard";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pixit/Pixit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B599046F2087123900A5265F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C336731252B4F268962D3BD /* Pods-Pixit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8JN74TLV88;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pixit",
+					"$(PROJECT_DIR)/opencv",
+				);
+				INFOPLIST_FILE = Pixit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pixit.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sabine Wildecard";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pixit/Pixit-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B59904562087123700A5265F /* Build configuration list for PBXProject "Pixit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599046B2087123900A5265F /* Debug */,
+				B599046C2087123900A5265F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B599046D2087123900A5265F /* Build configuration list for PBXNativeTarget "Pixit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599046E2087123900A5265F /* Debug */,
+				B599046F2087123900A5265F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B59904532087123700A5265F /* Project object */;
+}
